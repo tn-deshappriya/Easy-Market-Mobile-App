@@ -14,6 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class login extends AppCompatActivity {
     // Define variable for get login page registration button value assign..
     private Button loginRegisterBtn;
+    private Button LoginBtnSignin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +35,17 @@ public class login extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(login.this, register.class);
                 startActivity(intent);
+            }
+        });
+
+        // Button Value extract to variable
+        LoginBtnSignin = findViewById(R.id.loginSignInBtn);
+        LoginBtnSignin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(login.this, dashboard.class);
+                startActivity(intent);
+                finish();
             }
         });
     }
