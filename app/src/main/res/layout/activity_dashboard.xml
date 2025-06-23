@@ -49,9 +49,165 @@
                 android:layout_height="35dp"
                 android:src="@drawable/profileicon"
                 android:layout_marginLeft="35dp"/>
-
-
         </LinearLayout>
         </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginTop="2dp"
+            app:cardBackgroundColor="#ADEED9"
+            android:layout_gravity="center">
+            <RelativeLayout
+                android:id="@+id/announcementBar"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="5dp"
+                android:layout_marginBottom="100dp"
+                android:background="@drawable/bg_announcement">
+
+                <TextSwitcher
+                    android:id="@+id/textSwitcher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+
+                <ImageView
+                    android:id="@+id/closeIcon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/close"
+                    android:padding="4dp"
+                    android:contentDescription="Close" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="#00809D"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="25dp"
+            android:layout_gravity="center">
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="3"
+                android:padding="10dp"
+                android:layout_gravity="center" >
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/dashboardFavBtnCard"
+                    app:cardCornerRadius="15dp"
+                    android:layout_height="150dp"
+                    android:layout_width="150dp"
+                    android:layout_marginEnd="30dp"
+                    app:cardBackgroundColor="#FFFBDE">
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:textStyle="bold"
+                        android:text="Fav List \nMarket"
+                        android:gravity="center"
+                        android:textSize="25dp"
+                        android:textColor="#388289"
+                        android:clickable="true"
+                        android:focusable="true" />
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/dashboardFindNearMarketBtnCard"
+                    app:cardCornerRadius="15dp"
+                    android:layout_height="150dp"
+                    android:layout_width="150dp"
+                    app:cardBackgroundColor="#FFFBDE">
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:textStyle="bold"
+                        android:text="Find \nNearest \nMarket"
+                        android:gravity="center"
+                        android:textSize="25dp"
+                        android:textColor="#388289"
+                        android:clickable="true"
+                        android:focusable="true" />
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/dashboardGoToCartBtnCard"
+                    app:cardCornerRadius="15dp"
+                    android:layout_height="150dp"
+                    android:layout_width="150dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginTop="30dp"
+                    app:cardBackgroundColor="#FFFBDE">
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:textStyle="bold"
+                        android:text="Go To \nCart"
+                        android:gravity="center"
+                        android:textSize="25dp"
+                        android:textColor="#388289"
+                        android:clickable="true"
+                        android:focusable="true" />
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/dashboardCalBtnCard"
+                    app:cardCornerRadius="15dp"
+                    android:layout_height="150dp"
+                    android:layout_width="150dp"
+                    android:layout_marginTop="30dp"
+                    app:cardBackgroundColor="#FFFBDE">
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:textStyle="bold"
+                        android:text="Calculator"
+                        android:gravity="center"
+                        android:textSize="25dp"
+                        android:textColor="#388289"
+                        android:clickable="true"
+                        android:focusable="true" />
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/dashboardPreCartListBtnCard"
+                    app:cardCornerRadius="15dp"
+                    android:layout_height="150dp"
+                    android:layout_width="150dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="30dp"
+                    app:cardBackgroundColor="#FFFBDE">
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:textStyle="bold"
+                        android:text="Previous\nCart List"
+                        android:gravity="center"
+                        android:textSize="25dp"
+                        android:textColor="#388289"
+                        android:clickable="true"
+                        android:focusable="true" />
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/dashboardTakenoteBtnCard"
+                    app:cardCornerRadius="15dp"
+                    android:layout_height="150dp"
+                    android:layout_width="150dp"
+                    android:layout_marginTop="30dp"
+                    app:cardBackgroundColor="#FFFBDE">
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:textStyle="bold"
+                        android:text="Find \nNearest \nMarket"
+                        android:gravity="center"
+                        android:textSize="25dp"
+                        android:textColor="#388289"
+                        android:clickable="true"
+                        android:focusable="true" />
+                </androidx.cardview.widget.CardView>
+            </GridLayout>
+        </androidx.cardview.widget.CardView>
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
