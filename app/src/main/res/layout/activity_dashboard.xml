@@ -103,8 +103,11 @@
                     android:layout_height="150dp"
                     android:layout_width="150dp"
                     android:layout_marginEnd="30dp"
+                    android:clickable="true"
+                    android:focusable="true"
                     app:cardBackgroundColor="#FFFBDE">
                     <TextView
+                        android:id="@+id/dashbordFavListBtn"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:textStyle="bold"

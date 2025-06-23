@@ -16,6 +16,7 @@ import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -77,13 +78,16 @@ public class dashboard extends AppCompatActivity {
             bar.setVisibility(View.GONE);
             handler.removeCallbacks(runnable); // stop rotating
         });
-
-
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        TextView FavBtn = findViewById(R.id.dashbordFavListBtn);
 
+        FavBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(dashboard.this, favList.class);
+            startActivity(intent);
+        });
     }
 }
