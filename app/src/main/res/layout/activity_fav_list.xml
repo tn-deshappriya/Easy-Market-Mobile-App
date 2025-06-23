@@ -6,5 +6,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".favList">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        app:cardBackgroundColor="#42C4D0">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Fav Market List"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#4E37B2"/>
 
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/back_arrow"
+            />
+    </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
